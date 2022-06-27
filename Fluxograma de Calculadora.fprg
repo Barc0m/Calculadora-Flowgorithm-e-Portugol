@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adriana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-09 05:46:17 "/>
+        <attribute name="created" value="QWRyaWFuYTtDT01QVVRBRE9SLURPLUI7MjAyMi0wNC0wOTsiMDM6MzM6MTYgIjsyOTQ3"/>
+        <attribute name="edited" value="QWRyaWFuYTtDT01QVVRBRE9SLURPLUI7MjAyMi0wNC0wOTsiMDU6NDY6MTcgIjszOzMwNjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, n1, n2" type="Real" array="False" size=""/>
+            <declare name="op" type="String" array="False" size=""/>
+            <declare name="dec" type="String" array="False" size=""/>
+            <output expression="&quot;Voc&#234; esta em uma calculadora, por favor digite oque voc&#234; quer fazer&#13;&#10;Multiplica&#231;&#227;o m, Divis&#227;o d, Adi&#231;&#227;o a, Subtra&#231;&#227;o s&quot;" newline="True"/>
+            <input variable="op"/>
+            <if expression="op = &quot;m&quot;">
+                <then>
+                    <output expression="&quot;Voc&#234; quer fazer uma multiplica&#231;&#227;o&#13;&#10;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+                    <input variable="n1"/>
+                    <output expression="&quot;Agora digite o segundo n&#250;mero&quot;" newline="True"/>
+                    <input variable="n2"/>
+                    <assign variable="r" expression="n1*n2"/>
+                    <output expression="&quot;Aqui est&#225; o resultado: &quot; &amp; r" newline="True"/>
+                </then>
+                <else>
+                    <if expression="op = &quot;d&quot;">
+                        <then>
+                            <output expression="&quot;Voc&#234; quer fazer uma divis&#227;o&#13;&#10;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+                            <input variable="n1"/>
+                            <output expression="&quot;Agora digite o segundo n&#250;mero&quot;" newline="True"/>
+                            <input variable="n2"/>
+                            <assign variable="r" expression="n1/n2"/>
+                            <output expression="&quot;Aqui est&#225; o resultado: &quot; &amp; r" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="op = &quot;a&quot;">
+                                <then>
+                                    <output expression="&quot;Voc&#234; quer fazer uma adi&#231;&#227;o&#13;&#10;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+                                    <input variable="n1"/>
+                                    <output expression="&quot;Agora digite o segundo n&#250;mero&quot;" newline="True"/>
+                                    <input variable="n2"/>
+                                    <assign variable="r" expression="n1+n2"/>
+                                    <output expression="&quot;Aqui est&#225; o resultado: &quot; &amp; r" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="op = &quot;s&quot;">
+                                        <then>
+                                            <output expression="&quot;Voc&#234; quer fazer uma subtra&#231;&#227;o&#13;&#10;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+                                            <input variable="n1"/>
+                                            <output expression="&quot;Agora digite o segundo n&#250;mero&quot;" newline="True"/>
+                                            <input variable="n2"/>
+                                            <assign variable="r" expression="n1-n2"/>
+                                            <output expression="&quot;Aqui est&#225; o resultado: &quot; &amp; r" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Voc&#234; n&#227;o quer fazer nada&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
